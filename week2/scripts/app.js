@@ -31,7 +31,24 @@ function DisplayHomePage() {
     {
         location.href = "about.html"
     });
-}
+
+    // Create and update paragraph using template strings
+    let MainContent = document.getElementsByTagName("main")[0];
+    let MainParagraph = document.createElement("p");
+    let firstString = "This is";
+    MainParagraph.setAttribute("id", "MainParagraph");
+    MainParagraph.setAttribute("class", "mt-3");
+    MainParagraph.textContent = `${firstString} the Main Paragraph!`;  // Using template string
+    MainContent.appendChild(MainParagraph);
+    }
+
+    // Create and append an article
+    let Article = document.createElement("article");
+    let ArticleParagraph = `<p id="ArticleParagraph" class="mt-3">This is my article paragraph</p>`;
+    Article.setAttribute("class", "container");
+    Article.innerHTML = ArticleParagraph;
+    document.body.appendChild(Article);  // Appending to the body, adjust if needed
+
 
     window.addEventListener("load", Start);
 })();
