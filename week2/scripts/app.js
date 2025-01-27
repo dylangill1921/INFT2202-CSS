@@ -24,6 +24,7 @@ function setActiveLink() {
     });
 }
 
+// Set up event listener for the About Us button
 function DisplayHomePage() {
     let AboutUsButton = document.getElementById("AboutUsBtn");
     AboutUsButton.addEventListener("click", function() 
