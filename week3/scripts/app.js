@@ -42,6 +42,33 @@ function DisplayHomePage() {
     MainContent.appendChild(MainParagraph);
     }
 
+function DisplayContactListPage() {
+    console.log("Contact Us Page");
+
+    if(localStorage.length > 0){
+        let contactList = document.getElementById("contactList");
+        let data = "";
+
+        let keys = Object.keys(localStorage);
+
+        let index = 1;
+        for(const key of keys) {
+            let contactData = localStorage.getItem(key);
+            let contact = new Contact();
+            contact.deserialize(contactData);
+            data += <tr><th scope="row" class="text-center">${index}</th>
+            <td>${contact.FullName}</td>
+            <td>${contact.ContactNumber}</td>
+            <td>${contact.EmailAddress}</td>
+            <td></td>
+            <td></td>
+            </tr> ;
+            index++;
+        }
+        contactList.innerHTML = data;
+    }
+}
+
     window.addEventListener("load", Start);
 })();
 
