@@ -1,49 +1,8 @@
 /*
 Name: Dylan Gill & Joel Hieckert
 Class Code: INFT-2202-03
-Description: home.css
+Description: navbar.css
 */
-
-/* Home page styling to center all text */
-main.container {
-    text-align: center;
-    padding: 40px 20px;
-}
-
-main.container h1 {
-    color: #e31837;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-main.container p {
-    font-size: 1.1rem;
-    color: #333;
-    margin-bottom: 30px;
-}
-
-main.container .carousel {
-    margin-bottom: 30px;
-}
-
-main.container .btn-primary {
-    background-color: #e31837;
-    border-color: #e31837;
-    color: #ffffff;
-    font-weight: bold;
-    padding: 10px 20px;
-}
-
-main.container .btn-primary:hover {
-    background-color: #b3122f;
-    border-color: #b3122f;
-    color: #ffffff;
-}
-
-#AboutUsBtn {
-    display: block;
-    margin: 0 auto;
-}
 
 /* Navbar styling with Salvation Army red background and white text */
 .navbar {
@@ -97,4 +56,16 @@ main.container .btn-primary:hover {
 
 .nav-item:first-child {
     margin-left: 0;
+}
+
+@media (max-width: 992px) {
+    .navbar-nav {
+        margin-right: 0;
+        background-color: #e31837;
+    }
+
+    .nav-item {
+        margin-left: 0;
+        padding: 10px 0;
+    }
 }

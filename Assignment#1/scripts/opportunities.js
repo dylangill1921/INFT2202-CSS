@@ -1,3 +1,9 @@
+/*
+Name: Dylan Gill & Joel Hieckert
+Class Code: INFT-2202-03
+Description: 
+*/
+
 // An array of objects for opportunities
 const opportunities = [
     {
